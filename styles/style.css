@@ -12,9 +12,17 @@ div {
     margin: auto;
 }
 
+.top {
+    margin: auto;
+    text-align: left;
+    background-color: gray;
+    font-size: 48px;
+    color: green;
+}
+
 body {
-    background-color: green;
-    font-family: sans-serif;
+    background-color:gray;
+    font-family: Helvetica;
     margin: 2em;
 }
 
