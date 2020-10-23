@@ -59,7 +59,7 @@ p {
 
   /* Sidebar Menu things */
 
-.sidenav {
+.menu {
     height: 100%;
     width: 0; 
     position: fixed; 
@@ -73,7 +73,7 @@ p {
   }
   
   /* The navigation menu links */
-  .sidenav a {
+  .menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -83,11 +83,11 @@ p {
   }
   
   
-  .sidenav a:hover {
+  .menu a:hover {
     color: #f1f1f1;
   }
   
-  .sidenav .closebtn {
+  .menu .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
