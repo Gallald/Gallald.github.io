@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="script.js"></script>
+	<title>Gallal Dharhan</title>
+</head>
+
+    <body>
+    <h1>What is Encryption?</h1>
+
+            <p>
+            <b><i>Encryption</i></b
+            >, by definition, is "the process of converting information or data into a
+            code, especially to prevent unauthorized access".
+            </p>
+
+            <h1>What is Decryption?</h1>
+
+            <p>
+            <b><i>Decryption</i></b
+            >, by definition, is the opposite of encryption, which is the conversion
+            of encrypted data back into its original form.
+            </p>
+
+            <button id="info">Why do we use encryption?</button>
+
+            <textarea
+            cols="50"
+            rows="10"
+            id="reason"
+            placeholder="Click here to learn why and how we use encryption..."
+            ></textarea>
+
+            <br />
+            <!-- Caesar information -->
+            <button type="button" class="collapsible">Caesar</button>
+            <div class="content">
+            <br />
+            <b><i>Caesar</i></b> encryption is one of the earliest and simplest of
+            encryption methods.  The writer of the message and the recipient together 
+            devise a numeric "key" value between 1 and 25, which is then used to encrypt 
+            through shifting forward that many letters in the alphabet. <br> <br>
+            For example,
+            If the key value is 4 and the message is "A," the encrypted version 
+            of the message would be "E." <br> <br>
+            When the recipient receives the message, 
+            s/he decrypts it by shifting the same number of letters backwards in the alphabet. 
+            "E" shifted backwards 4 spaces would then return the decrypted message of "A."  <br> <br>
+            As another example, if the plaintext was "HELLO" and the key value was 3, the resulting 
+            encrypted message would be: "KHOOR"; to decrypt, you'd move back 3 spaces and recover the 
+            message "HELLO."
+            <!-- Caesar exercises 
+            <button><a href="caesar1.html">Easy</a></button>
+            <button><a href="caesar2.html">Medium</a></button>
+            <button><a href="caesar3.html">Hard</a></button>  -->
+            </div>
+
+            <button type="button" class="collapsible">Pigpen</button>
+            <div class="content">
+            <br />
+            <!-- Pigpen information -->
+
+            <b><i>Pigpen</i></b> encryption is a bit more complicated than the
+            previous two. It involves a system of grids, dots, and in some cases,
+            <i>x</i>'s. In order to decypher the message, one must find the letter
+            corresponding to the letter in the given grid, using the dots to determine
+            which grid to look at, and the shape of the symbol to figure out which
+            letter to choose. For example, if we were given the symbols:<br />
+            <img
+                src="/assets/images/Pigpen_Ex.png"
+            />
+            <br />using the key below:<br />
+            <img
+                src="/assets/images/Pigpen_Full.jpg"
+            />
+            <br />We can see that the encrypted message says "HELLO"<br />
+            </div>
+
+    </body>
+</html>
