@@ -57,10 +57,11 @@ p {
   margin-left: 5px;
 }
 
-/* homepage button */
-.home {
-  position: absolute;
+/*Mocking text textarea */
+textarea {
+  margin: auto;
 }
+
 /* Sidebar Menu things */
 
 .menu {
