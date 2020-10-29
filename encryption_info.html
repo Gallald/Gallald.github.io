@@ -4,9 +4,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles/style.css">
-	<script src="script.js"></script>
-	<title>Gallal Dharhan</title>
+	<link rel="stylesheet" href="styles/encryption_style.css">
+	<script src="scripts/encryption_script.js"></script>
+	<title>Encryption Info</title>
 </head>
 
     <body>
@@ -53,10 +53,10 @@
             As another example, if the plaintext was "HELLO" and the key value was 3, the resulting 
             encrypted message would be: "KHOOR"; to decrypt, you'd move back 3 spaces and recover the 
             message "HELLO."
-            <!-- Caesar exercises 
+            <!-- Caesar exercises -->
             <button><a href="caesar1.html">Easy</a></button>
             <button><a href="caesar2.html">Medium</a></button>
-            <button><a href="caesar3.html">Hard</a></button>  -->
+            <button><a href="caesar3.html">Hard</a></button>  
             </div>
 
             <button type="button" class="collapsible">Pigpen</button>
@@ -78,6 +78,40 @@
                 src="/assets/images/Pigpen_Full.jpg"
             />
             <br />We can see that the encrypted message says "HELLO"<br />
+
+            <!-- Pigpen Exercises -->
+            <button><a href="pigpen1.html">Easy</a></button>
+            <button><a href="pigpen2.html">Medium</a></button>
+            <button><a href="pigpen3.html">Hard</a></button> 
+            </div>
+
+            <!-- One-time Pads/Rotational information -->
+
+            <button type="button" class="collapsible">One-Time Pads</button>
+            <div class="content">
+            <br />
+
+            <b><i>One-time pads</i></b>, sometimes referred to as <i>rotational,</i> work a bit like Caesar ciphers, except that you generate a key 
+            for each letter in the message. <br> <br>
+            For example, if your message is HELLO and the keys are 1-6-3-4-2, 
+            the resulting encryption would be IKOPQ. Decryption works analogously,
+            by shifting backwards in the alphabet instead of forwards. <br> <br> 
+            Under perfect use, one-time pads are information-theoretically secure; that is, completely uncrackable, 
+            because the encrypted text reveals nothing about the message.  <br> <br>
+            For example, an encrypted message "AA" could have been the message <br> 
+            AT (with keys 0-7) or IN (keys 18-13) or BY (keys 25-2) 
+            ... or, in fact, any two-letter word at all! Note that double letters (as the Ls in HELLO) are encrypted using different key 
+            values and so offer no extra information and that there is no simple way to try out all possible values to determine a likely one. <br> <br>
+            
+            The downside is that one-time pads are hard to use perfectly.  Perfect use requires the creation of a new set of key 
+            values for each letter in the message; the key values can never be reused; the key values are entirely randomly generated; 
+            and the key values remain a complete secret.  Breaches in any of these conditions weakens the security of the one-time pad.
+            
+
+            <!-- Rotation exercises -->
+            <button><a href="rotation1.html">Easy</a></button>
+            <button><a href="rotation2.html">Medium</a></button>
+            <button><a href="rotation3.html">Hard</a></button>   
             </div>
 
     </body>
