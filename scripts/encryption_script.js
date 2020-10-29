@@ -109,13 +109,11 @@ function c1completed() {
     if(rightCount == 3){
       rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
@@ -137,9 +135,7 @@ function c2completed() {
     rightCount += 1;
 
     if(rightCount == 3){
-      rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
@@ -169,13 +165,11 @@ function c3completed() {
     if(rightCount == 3){
       rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
@@ -200,13 +194,11 @@ function p1completed() {
     if(rightCount == 3){
       rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
@@ -232,13 +224,11 @@ function p2completed() {
     if(rightCount == 3){
       rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
@@ -263,13 +253,11 @@ function p3completed() {
     if(rightCount == 3){
       rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
@@ -294,13 +282,11 @@ function r1completed() {
     if(rightCount == 3){
       rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
@@ -325,13 +311,11 @@ function r2completed() {
     if(rightCount == 3){
       rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
@@ -356,13 +340,11 @@ function r3completed() {
     if(rightCount == 3){
       rightCount = 0; //Restart the counter to make sure it isn't at or above 3
       alert("Correct!");
-      switchWithCondition(true);
     }
 
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
