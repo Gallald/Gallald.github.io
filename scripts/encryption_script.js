@@ -141,7 +141,6 @@ function c2completed() {
   } else {
     answer.innerHTML = " ";
     alert("Wrong; try again");
-    switchWithCondition(false);
   }
 
 };
