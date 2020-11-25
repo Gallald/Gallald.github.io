@@ -84,7 +84,7 @@ function showDivs(){
     }
 
 
-}
+};
 
 showDivs();
 
@@ -94,8 +94,6 @@ function c1completed() {
   var input = document.getElementById("c1").value;
   var answer = document.getElementById("c1Ans");
   
-
-
 
   if(rightCount == 0){
     answer.innerHTML = " ";
@@ -112,8 +110,8 @@ function c1completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
@@ -122,7 +120,6 @@ function c1completed() {
 function c2completed() {
   var input = document.getElementById("c2").value;
   var answer = document.getElementById("c2Ans");
-
 
 
   if(rightCount == 0){
@@ -139,8 +136,8 @@ function c2completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
@@ -149,7 +146,6 @@ function c2completed() {
 function c3completed() {
   var input = document.getElementById("c3").value;
   var answer = document.getElementById("c3Ans");
-
 
 
   if(rightCount == 0){
@@ -167,8 +163,8 @@ function c3completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
@@ -177,7 +173,6 @@ function c3completed() {
 function p1completed() {
   var input = document.getElementById("p1").value;
   var answer = document.getElementById("p1Ans");
-
 
   
   if(rightCount == 0){
@@ -196,8 +191,8 @@ function p1completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
@@ -207,8 +202,6 @@ function p1completed() {
 function p2completed() {
   var input = document.getElementById("p2").value;
   var answer = document.getElementById("p2Ans");
- 
-  
 
 
   if(rightCount == 0){
@@ -226,8 +219,8 @@ function p2completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
@@ -236,8 +229,6 @@ function p2completed() {
 function p3completed() {
   var input = document.getElementById("p3").value;
   var answer = document.getElementById("p3Ans");
-
-
 
 
   if(rightCount == 0){
@@ -255,8 +246,8 @@ function p3completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
@@ -265,8 +256,6 @@ function p3completed() {
 function r1completed() {
   var input = document.getElementById("r1").value;
   var answer = document.getElementById("r1Ans");
-  
-  
   
 
   if(rightCount == 0){
@@ -284,8 +273,8 @@ function r1completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
@@ -294,8 +283,6 @@ function r1completed() {
 function r2completed() {
   var input = document.getElementById("r2").value;
   var answer = document.getElementById("r2Ans");
-  
-  
 
 
   if(rightCount == 0){
@@ -313,8 +300,8 @@ function r2completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
@@ -325,8 +312,6 @@ function r3completed() {
   var answer = document.getElementById("r3Ans");
   
   
-
-
   if(rightCount == 0){
     answer.innerHTML = " ";
   }
@@ -342,8 +327,8 @@ function r3completed() {
     }
 
   } else {
-    answer.innerHTML = " ";
-    alert("Wrong; try again");
+    answer.innerHTML = "Wrong; try again";
+    //alert("Wrong; try again");
   }
 
 };
