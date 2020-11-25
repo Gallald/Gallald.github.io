@@ -13,7 +13,7 @@ console.log("value 1 is " + value1 + ", value 2 is " + value2 + ", value3 is " +
 var button = document.getElementById("info"),
   count = 0;
 var text = document.getElementById("reason");
-button.onclick = function() {
+button.onclick = function(){
   count += 1;
   if (count % 2 === 0) {
     button.innerHTML = "Why do we use encryption?";
