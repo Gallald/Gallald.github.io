@@ -95,7 +95,7 @@ function showDivs(){
 
 };
 
-showDivs();
+window.onload = showDivs();
 
 /* Caesar1 check */
 function c1completed() {
