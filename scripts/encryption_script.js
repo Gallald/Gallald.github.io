@@ -18,7 +18,7 @@ button.onclick = function(){
   if (count % 2 === 0) {
     button.innerHTML = "Why do we use encryption?";
     text.value =
-      "The way we use encryption is with three key components after receiving the data: the cryptographic algorithm, the      cryptographic key, and the encrypted message.  It protects not only the privacy, but also the integrity of the data being sent over.  There are many different algorithms used to encrypt data, which will affect the resulting key, and resulting message, as well.";
+      "The way we use encryption is with three key components after receiving the data: the cryptographic algorithm, the cryptographic key, and the encrypted message.  It protects not only the privacy, but also the integrity of the data being sent over.  There are many different algorithms used to encrypt data, which will affect the resulting key, and resulting message, as well.";
   } else {
     button.innerHTML = "How do we use encryption?";
     text.value =
@@ -28,60 +28,69 @@ button.onclick = function(){
 
 function showDivs(){
 
-//Caesar values
-  var c1 = document.getElementById("caesar1Ex"); //Assign this div to 0, hide if not chosen randomly
-  var c2 = document.getElementById("caesar2Ex"); // 1
-  var c3 = document.getElementById("caesar3Ex"); // 2
+  //Caesar values
+    var c1 = document.getElementById("caesar1Ex"); //Assign this div to 0, hide if not chosen randomly
+    var c2 = document.getElementById("caesar2Ex"); // 1
+    var c3 = document.getElementById("caesar3Ex"); // 2
 
-//Pigpen values
-  var p1 = document.getElementById("pigpen1Ex"); // 3
-  var p2 = document.getElementById("pigpen2Ex"); // 4
-  var p3 = document.getElementById("pigpen3Ex"); // 5
+  //Pigpen values
+    var p1 = document.getElementById("pigpen1Ex"); // 3
+    var p2 = document.getElementById("pigpen2Ex"); // 4
+    var p3 = document.getElementById("pigpen3Ex"); // 5
 
-//OTP values
-  var r1 = document.getElementById("OTP1Ex"); // 6
-  var r2 = document.getElementById("OTP2Ex"); // 7
-  var r3 = document.getElementById("OTP3Ex"); // 8
+  //OTP values
+    var r1 = document.getElementById("OTP1Ex"); // 6
+    var r2 = document.getElementById("OTP2Ex"); // 7
+    var r3 = document.getElementById("OTP3Ex"); // 8
 
 
-//Caesar display checks  
-    if(value1 != 0){
-      c1.style.display = "none";
-    }
+  //Caesar display checks  
+      if(value1 != 0){
+        c1.style.display = "none";
+        console.log("c1 is not showing");
+      }
 
-    if(value1 != 1){
-      c2.style.display = "none";
-    }
+      if(value1 != 1){
+        c2.style.display = "none";
+        console.log("c2 is not showing");
+      }
 
-    if(value1 != 2){
-      c3.style.display = "none";
-    }
+      if(value1 != 2){
+        c3.style.display = "none";
+        console.log("c3 is not showing");
+      }
 
-//Pigpen display check
-    if(value2 != 3){
-      p1.style.display = "none";
-    }
+  //Pigpen display check
+      if(value2 != 3){
+        p1.style.display = "none";
+        console.log("p1 is not showing");
+      }
 
-    if(value2 != 4){
-      p2.style.display = "none";
-    }
+      if(value2 != 4){
+        p2.style.display = "none";
+        console.log("p2 is not showing");
+      }
 
-    if(value2 != 5){
-      p3.style.display = "none";
-    }
-    
-//OTP display check
-    if(value3 != 6){
-      r1.style.display = "none";
-    }
+      if(value2 != 5){
+        p3.style.display = "none";
+        console.log("p3 is not showing");
+      }
+      
+  //OTP display check
+      if(value3 != 6){
+        r1.style.display = "none";
+        console.log("r1 is not showing");
+      }
 
-    if(value3 != 7){
-      r2.style.display = "none";
-    }
+      if(value3 != 7){
+        r2.style.display = "none";
+        console.log("r2 is not showing");
+      }
 
-    if(value3 != 8){
-      r3.style.display = "none";
-    }
+      if(value3 != 8){
+        r3.style.display = "none";
+        console.log("r3 is not showing");
+      }
 
 
 };
@@ -335,10 +344,13 @@ function r3completed() {
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
+var x = 0;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function(){
     this.classList.toggle("active");
+    x++;
+    console.log("Clicked" + x + " times");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
