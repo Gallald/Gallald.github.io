@@ -26,7 +26,7 @@ button.onclick = function(){
   }
 };
 
-function showDivs(){
+window.onload = function showDivs(){
 
   //Caesar values
     var c1 = document.getElementById("caesar1Ex"); //Assign this div to 0, hide if not chosen randomly
@@ -91,11 +91,8 @@ function showDivs(){
         r3.style.display = "none";
         console.log("r3 is not showing");
       }
+}
 
-
-};
-
-window.onload = showDivs();
 
 /* Caesar1 check */
 function c1completed() {
