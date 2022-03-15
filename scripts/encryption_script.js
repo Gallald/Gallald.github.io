@@ -2,6 +2,7 @@
 var rotCount = 0;
 var pigCount = 0;
 */
+
 var rightCount = 0;
 var value1 = Math.floor(Math.random()*3); //Determine which Caesar Exercise to show
 var value2 = Math.floor(Math.random()*3)+3; //Determine which Pigpen Exercise to show
@@ -26,7 +27,7 @@ button.onclick = function(){
   }
 };
 
-window.onload = function showDivs(){
+/* Removing window.onload = for testing */function showDivs(){
 
   //Caesar values
     var c1 = document.getElementById("caesar1Ex"); //Assign this div to 0, hide if not chosen randomly
