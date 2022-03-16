@@ -2,7 +2,7 @@
 var rotCount = 0;
 var pigCount = 0;
 */
-
+var count = 0; /*For button to change information */
 var rightCount = 0;
 var value1 = Math.floor(Math.random()*3); //Determine which Caesar Exercise to show
 var value2 = Math.floor(Math.random()*3)+3; //Determine which Pigpen Exercise to show
@@ -11,8 +11,9 @@ var value3 = Math.floor(Math.random()*3)+6; //Determine which OTP Exercise to sh
 console.log("value 1 is " + value1 + ", value 2 is " + value2 + ", value3 is " + value3);
 
 /* Change text in boxes for information */
-var button = document.getElementById("info"),
-  count = 0;
+
+var button = document.getElementById("info");
+  
 var text = document.getElementById("reason");
 button.onclick = function(){
   count += 1;
@@ -27,7 +28,7 @@ button.onclick = function(){
   }
 };
 
-/* Removing window.onload = for testing */function showDivs(){
+function showDivs(){
 
   //Caesar values
     var c1 = document.getElementById("caesar1Ex"); //Assign this div to 0, hide if not chosen randomly
@@ -93,6 +94,8 @@ button.onclick = function(){
         console.log("r3 is not showing");
       }
 }
+
+showDivs(); //I'm dumb and the reason this wasn't working was because I wasn't calling it because I removed it at one point for testing purposes.
 
 
 /* Caesar1 check */
