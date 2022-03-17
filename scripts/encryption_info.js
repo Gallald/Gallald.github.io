@@ -1,8 +1,8 @@
 /* Change text in boxes for information */
-
+var count = 0; /*For button to change information */
 var button = document.getElementById("info");
-  
 var text = document.getElementById("reason");
+
 button.onclick = function(){
   count += 1;
   if (count % 2 === 0) {

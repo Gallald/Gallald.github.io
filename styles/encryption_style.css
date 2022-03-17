@@ -21,7 +21,7 @@ audio {
 bottom {
     background-color: lightgreen;
     color: black;
-    front-style: bold;
+    font-style: bold;
     border-radius: 8px;
     cursor: pointer;
     padding: 5px 24px;
@@ -29,7 +29,7 @@ bottom {
 }
   
 div {
-    margin: auto;
+    margin: 0%;
 }
   
 body {
@@ -83,7 +83,7 @@ button {
     display: inline-block;
     background-color: lightgreen;
     color: black;
-    front-style: bold;
+    font-style: bold;
     border-radius: 8px;
     cursor: pointer;
     padding: 5px 24px;
@@ -95,7 +95,7 @@ button {
     color: black;
     cursor: pointer;
     padding: 18px;
-    width: 50%;
+    width: 60%;
     border: none;
     text-align: left;
     outline: none;
@@ -108,7 +108,7 @@ button {
   
 .collapsible:after {
     content: '\002B';
-    color: white;
+    color: black;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -122,8 +122,10 @@ button {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.4s ease-out;
     background-color: lightgray;
+    width: 50%;
+    position: static;
 }
   
 .form{
