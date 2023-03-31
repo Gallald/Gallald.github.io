@@ -2,6 +2,7 @@
 var rotCount = 0;
 var pigCount = 0;
 */
+
 var rightCount = 0;
 var value1 = Math.floor(Math.random()*3); //Determine which Caesar Exercise to show
 var value2 = Math.floor(Math.random()*3)+3; //Determine which Pigpen Exercise to show
@@ -9,25 +10,10 @@ var value3 = Math.floor(Math.random()*3)+6; //Determine which OTP Exercise to sh
 
 console.log("value 1 is " + value1 + ", value 2 is " + value2 + ", value3 is " + value3);
 
-/* Change text in boxes for information */
-var button = document.getElementById("info"),
-  count = 0;
-var text = document.getElementById("reason");
-button.onclick = function(){
-  count += 1;
-  if (count % 2 === 0) {
-    button.innerHTML = "Why do we use encryption?";
-    text.value =
-      "The way we use encryption is with three key components after receiving the data: the cryptographic algorithm, the cryptographic key, and the encrypted message.  It protects not only the privacy, but also the integrity of the data being sent over.  There are many different algorithms used to encrypt data, which will affect the resulting key, and resulting message, as well.";
-  } else {
-    button.innerHTML = "How do we use encryption?";
-    text.value =
-      "We use encryption to protect sensitive information that is stored on our computers, or passed through the internet. Things like bank account information, online payments, and passwords are encrypted to prevent unwanted sharing of that sensitive information.";
-  }
-};
 
-window.onload = function showDivs(){
 
+function showDivs(){
+  console.log("showDivs has run");
   //Caesar values
     var c1 = document.getElementById("caesar1Ex"); //Assign this div to 0, hide if not chosen randomly
     var c2 = document.getElementById("caesar2Ex"); // 1
@@ -91,7 +77,10 @@ window.onload = function showDivs(){
         r3.style.display = "none";
         console.log("r3 is not showing");
       }
-}
+};
+
+window.onload = showDivs; /*I'm dumb and the reason this wasn't working was because 
+I wasn't calling it because I removed it at one point for testing purposes. */
 
 
 /* Caesar1 check */
@@ -339,23 +328,6 @@ function r3completed() {
 
 };
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
-var x = 0;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function(){
-    this.classList.toggle("active");
-    x++;
-    console.log("Clicked" + x + " times");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
 
 /*
 var rotation = document.getElementById("rotational_ex"),
